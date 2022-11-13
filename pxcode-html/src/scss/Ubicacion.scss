@@ -1,0 +1,355 @@
+@use "utils" as *;
+
+$color_type_0: rgb(110, 176, 152);
+$color_type_1: rgb(111, 176, 153);
+$color_type_2: rgb(212, 255, 240);
+$color_type_3: rgb(255, 255, 255);
+
+$border_radius_type_0: 10px 10px 10px 10px;
+
+$font_type_0: 400 64px/1.2 "Kaushan Script", Helvetica, Arial, serif;
+$font_type_1: 400 32px/1.2 "Kaushan Script", Helvetica, Arial, serif;
+$font_type_2: 400 14px/1.2 "Kaushan Script", Helvetica, Arial, serif;
+
+.ubicacion {
+  @include flex-column;
+  background-color: $color_type_3;
+  height: 1200px;
+  position: relative;
+}
+.direccion {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_0;
+  color: $color_type_0;
+  text-align: center;
+  text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.24705882352941178);
+  letter-spacing: 0px;
+  width: 865px;
+  height: 231px;
+  position: absolute;
+  top: 767px;
+  left: 0px;
+  right: 0px;
+  min-width: 865px;
+  margin: 0px auto;
+}
+.hero_title {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_0;
+  color: $color_type_0;
+  text-align: center;
+  letter-spacing: 0px;
+  width: 613px;
+  height: 159px;
+  position: absolute;
+  top: 0px;
+  left: 312px;
+  min-width: 613px;
+}
+.barra {
+  @include flex-column;
+  background-color: $color_type_1;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.247);
+  border-radius: $border_radius_type_0;
+  width: 97.22%;
+  height: 50px;
+  position: relative;
+  margin: 148px auto 0px;
+}
+.barra__Botones {
+  display: flex;
+  width: 47.71%;
+  position: relative;
+  flex-grow: 1;
+  margin: 3px auto;
+}
+.barra__Botones > .item {
+  @include flex-column;
+  position: relative;
+  flex: 1 0 auto;
+  min-width: 127px;
+}
+.inicio {
+  @include flex-column;
+  background-color: $color_type_2;
+  border-radius: $border_radius_type_0;
+  width: fit-content;
+  height: min-content;
+  cursor: pointer;
+  position: relative;
+  min-width: 0px;
+}
+.btn__text {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_1;
+  color: $color_type_0;
+  text-align: center;
+  letter-spacing: 0px;
+  height: min-content;
+  position: relative;
+  margin: 1px 11px;
+}
+.barra__Botones > .spacer {
+  flex: 0 1 38px;
+}
+.menu {
+  @include flex-column;
+  background-color: $color_type_2;
+  border-radius: $border_radius_type_0;
+  width: fit-content;
+  height: min-content;
+  cursor: pointer;
+  position: relative;
+  min-width: 0px;
+}
+.barra__Botones > .item1 {
+  @include flex-column;
+  position: relative;
+  flex: 1 0 auto;
+  min-width: 147px;
+}
+.ubicacion1 {
+  @include flex-column;
+  background-color: $color_type_2;
+  border-radius: $border_radius_type_0;
+  width: fit-content;
+  height: min-content;
+  cursor: pointer;
+  position: relative;
+  min-width: 0px;
+}
+.btn__text1 {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_1;
+  color: $color_type_0;
+  text-align: center;
+  letter-spacing: 0px;
+  height: min-content;
+  position: relative;
+  margin: 1px 4px;
+}
+.barra__Botones > .item2 {
+  @include flex-column;
+  position: relative;
+  flex: 1 0 auto;
+  min-width: 152px;
+}
+.contactos {
+  @include flex-column;
+  background-color: $color_type_2;
+  border-radius: $border_radius_type_0;
+  width: fit-content;
+  height: min-content;
+  cursor: pointer;
+  position: relative;
+  min-width: 0px;
+}
+.btn__text2 {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_1;
+  color: $color_type_0;
+  text-align: center;
+  letter-spacing: 0px;
+  height: min-content;
+  position: relative;
+  margin: 1px 10px;
+}
+.decorator {
+  width: 523px;
+  height: auto;
+  vertical-align: top;
+  object-fit: contain;
+  object-position: center top;
+  position: absolute;
+  top: -804px;
+  right: 229px;
+}
+.col {
+  @include flex-column;
+  width: 130px;
+  height: 125px;
+  position: absolute;
+  top: 408px;
+  right: 583px;
+}
+.paragraph {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_2;
+  color: $color_type_0;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+}
+.paragraph1 {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_2;
+  color: $color_type_0;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+  margin: 65px 0px 0px;
+}
+.mapa {
+  @include flex-column;
+  background-color: $color_type_2;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.247);
+  border-radius: $border_radius_type_0;
+  width: 948px;
+  height: 414px;
+  position: absolute;
+  top: 263px;
+  left: -100vw;
+  right: -100vw;
+  margin: 0px auto;
+}
+.content_box1 {
+  @include flex-column;
+  border-radius: $border_radius_type_0;
+  outline: 24px solid #ffffffff;
+  outline-offset: -24px;
+  position: relative;
+  flex-grow: 1;
+  margin: 33px 38px 34px 39px;
+}
+.col1 {
+  @include flex-column;
+  width: 81.97%;
+  position: relative;
+  flex-grow: 1;
+  margin: 45px 5.4% 45px 12.63%;
+}
+.row {
+  display: flex;
+  position: relative;
+  margin: 0px 0px 0px 3px;
+}
+.rect9 {
+  background-color: $color_type_1;
+  border-radius: $border_radius_type_0;
+  height: 70px;
+  position: relative;
+  flex: 0 1 87px;
+}
+.row > .spacer {
+  flex: 0 1 18px;
+}
+.row > .spacer1 {
+  flex: 0 1 42px;
+}
+.rect6 {
+  background-color: $color_type_1;
+  border-radius: $border_radius_type_0;
+  height: 70px;
+  position: relative;
+  flex: 0 1 88px;
+}
+.row > .spacer2 {
+  flex: 0 1 41px;
+}
+.row > .spacer3 {
+  flex: 0 1 43px;
+}
+.row1 {
+  display: flex;
+  position: relative;
+  margin: 23px 0px 0px;
+}
+.rect10 {
+  background-color: $color_type_1;
+  border-radius: $border_radius_type_0;
+  height: 71px;
+  position: relative;
+  flex: 0 1 195px;
+}
+.row1 > .spacer {
+  flex: 0 1 12px;
+}
+.row1 > .item {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 14px;
+}
+.image {
+  width: 14px;
+  height: auto;
+  vertical-align: top;
+  object-fit: contain;
+  object-position: center top;
+  position: relative;
+  min-width: 14px;
+  margin: 7px 0px 6px;
+}
+.row1 > .spacer1 {
+  flex: 0 1 16px;
+}
+.group {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 88px;
+}
+.rect8 {
+  background-color: $color_type_3;
+  border-radius: $border_radius_type_0;
+  height: 71px;
+  position: relative;
+}
+.decorator1 {
+  width: 268px;
+  height: auto;
+  vertical-align: top;
+  object-fit: contain;
+  object-position: center top;
+  position: absolute;
+  top: -505px;
+  left: -121px;
+}
+.image1 {
+  width: 14px;
+  height: auto;
+  vertical-align: top;
+  object-fit: contain;
+  object-position: center top;
+  position: relative;
+  min-width: 14px;
+  margin: 5px 0px 8px;
+}
+.row1 > .spacer2 {
+  flex: 0 1 15px;
+}
+.rect7 {
+  background-color: $color_type_1;
+  border-radius: $border_radius_type_0;
+  height: 71px;
+  position: relative;
+  flex: 0 1 88px;
+}
+.row1 > .spacer3 {
+  flex: 0 1 14px;
+}
+.row1 > .spacer4 {
+  flex: 0 1 13px;
+}
+.row2 {
+  display: flex;
+  position: relative;
+  margin: 23px 0px 0px 3px;
+}
+.row2 > .spacer {
+  flex: 0 1 18px;
+}
+.row2 > .spacer1 {
+  flex: 0 1 42px;
+}
+.row2 > .spacer2 {
+  flex: 0 1 41px;
+}
+.row2 > .spacer3 {
+  flex: 0 1 43px;
+}

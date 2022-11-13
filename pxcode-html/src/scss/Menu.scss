@@ -1,0 +1,425 @@
+@use "utils" as *;
+
+$color_type_0: rgb(0, 0, 0);
+$color_type_1: rgb(110, 176, 152);
+$color_type_2: rgb(111, 176, 153);
+$color_type_3: rgb(212, 255, 240);
+$color_type_4: rgb(255, 255, 255);
+
+$border_radius_type_0: 10px 10px 10px 10px;
+
+$font_type_0: 400 64px/1.2 "Kaushan Script", Helvetica, Arial, serif;
+$font_type_1: 400 32px/1.2 "Kaushan Script", Helvetica, Arial, serif;
+$font_type_2: 200 15px/1.2 "Karla", Helvetica, Arial, serif;
+
+.menu {
+  @include flex-column;
+  background-color: $color_type_4;
+  position: relative;
+}
+.imagen {
+  @include flex-column;
+  background-color: $color_type_2;
+  width: 592px;
+  height: 621px;
+  position: absolute;
+  overflow: hidden;
+  top: 393px;
+  left: -100vw;
+  right: -100vw;
+  margin: 0px auto;
+}
+.imagenPlatillo {
+  border-radius: $border_radius_type_0;
+  width: 75.51%;
+  height: auto;
+  filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.247));
+  vertical-align: top;
+  object-fit: contain;
+  object-position: center top;
+  position: relative;
+  margin: 234px auto 156px;
+  @include xs {
+    width: 80.43%;
+  }
+  @include xxs {
+    width: 84.57%;
+  }
+  @include tn {
+    width: 87.97%;
+  }
+}
+.barra {
+  @include flex-column;
+  background-color: $color_type_2;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.247);
+  border-radius: $border_radius_type_0;
+  position: relative;
+  flex-grow: 1;
+  margin: 148px 20px 1002px;
+  @include lg {
+    margin: 148px 18px 1002px;
+  }
+  @include md {
+    margin: 148px 15px 1002px;
+  }
+  @include sm {
+    margin: 148px 13px 1002px;
+  }
+  @include xs {
+    margin: 148px 11px 1002px;
+  }
+  @include xxs {
+    margin: 148px 10px 1002px;
+  }
+}
+.barra__Botones {
+  display: flex;
+  width: 47.71%;
+  position: relative;
+  flex-grow: 1;
+  margin: 3px auto;
+  @include sm {
+    width: 54.9%;
+  }
+  @include xs {
+    width: 61.88%;
+  }
+  @include xxs {
+    width: 68.39%;
+  }
+  @include tn {
+    width: 74.26%;
+  }
+}
+.barra__Botones > .item {
+  @include flex-column;
+  position: relative;
+  flex: 1 0 auto;
+  min-width: 127px;
+}
+.inicio {
+  @include flex-column;
+  background-color: $color_type_3;
+  border-radius: $border_radius_type_0;
+  width: fit-content;
+  height: min-content;
+  cursor: pointer;
+  position: relative;
+  min-width: 0px;
+}
+.btn__text {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_1;
+  color: $color_type_1;
+  text-align: center;
+  letter-spacing: 0px;
+  height: min-content;
+  @include lg {
+    font-size: 29px;
+    text-align: center;
+  }
+  @include md {
+    font-size: 25px;
+  }
+  @include sm {
+    font-size: 23px;
+  }
+  @include xs {
+    font-size: 21px;
+  }
+  @include xxs {
+    font-size: 20px;
+  }
+  @include tn {
+    font-size: 19px;
+  }
+  position: relative;
+  margin: 1px 11px;
+}
+.barra__Botones > .spacer {
+  flex: 0 1 38px;
+}
+.menu1 {
+  @include flex-column;
+  background-color: $color_type_3;
+  border-radius: $border_radius_type_0;
+  width: fit-content;
+  height: min-content;
+  cursor: pointer;
+  position: relative;
+  min-width: 0px;
+}
+.barra__Botones > .item1 {
+  @include flex-column;
+  position: relative;
+  flex: 1 0 auto;
+  min-width: 147px;
+}
+.ubicacion {
+  @include flex-column;
+  background-color: $color_type_3;
+  border-radius: $border_radius_type_0;
+  width: fit-content;
+  height: min-content;
+  cursor: pointer;
+  position: relative;
+  min-width: 0px;
+}
+.btn__text1 {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_1;
+  color: $color_type_1;
+  text-align: center;
+  letter-spacing: 0px;
+  height: min-content;
+  @include lg {
+    font-size: 29px;
+    text-align: center;
+  }
+  @include md {
+    font-size: 25px;
+  }
+  @include sm {
+    font-size: 23px;
+  }
+  @include xs {
+    font-size: 21px;
+  }
+  @include xxs {
+    font-size: 20px;
+  }
+  @include tn {
+    font-size: 19px;
+  }
+  position: relative;
+  margin: 1px 4px;
+}
+.barra__Botones > .item2 {
+  @include flex-column;
+  position: relative;
+  flex: 1 0 auto;
+  min-width: 152px;
+}
+.contactos {
+  @include flex-column;
+  background-color: $color_type_3;
+  border-radius: $border_radius_type_0;
+  width: fit-content;
+  height: min-content;
+  cursor: pointer;
+  position: relative;
+  min-width: 0px;
+}
+.btn__text2 {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_1;
+  color: $color_type_1;
+  text-align: center;
+  letter-spacing: 0px;
+  height: min-content;
+  @include lg {
+    font-size: 29px;
+    text-align: center;
+  }
+  @include md {
+    font-size: 25px;
+  }
+  @include sm {
+    font-size: 23px;
+  }
+  @include xs {
+    font-size: 21px;
+  }
+  @include xxs {
+    font-size: 20px;
+  }
+  @include tn {
+    font-size: 19px;
+  }
+  position: relative;
+  margin: 1px 10px;
+}
+.decorator {
+  width: 523px;
+  height: auto;
+  vertical-align: top;
+  object-fit: contain;
+  object-position: center top;
+  position: absolute;
+  top: -804px;
+  right: 229px;
+  @include xxl;
+}
+.hero_title {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_0;
+  color: $color_type_1;
+  text-align: center;
+  letter-spacing: 0px;
+  width: 613px;
+  height: 159px;
+  @include lg {
+    font-size: 56px;
+    text-align: center;
+  }
+  @include md {
+    font-size: 48px;
+  }
+  @include sm {
+    font-size: 41px;
+  }
+  @include xs {
+    font-size: 37px;
+  }
+  @include xxs {
+    font-size: 34px;
+  }
+  @include tn {
+    font-size: 31px;
+  }
+  position: absolute;
+  top: -6px;
+  left: 312px;
+}
+.infoPlatillo {
+  @include flex-column;
+  background-color: $color_type_3;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.247);
+  border-radius: $border_radius_type_0;
+  width: 948px;
+  height: 257px;
+  position: absolute;
+  top: 262px;
+  left: -100vw;
+  right: -100vw;
+  margin: 0px auto;
+}
+.datos {
+  @include flex-column;
+  width: 64.66%;
+  position: relative;
+  flex-grow: 1;
+  margin: 6px auto 42px;
+  @include sm {
+    width: 70.92%;
+  }
+  @include xs {
+    width: 76.47%;
+  }
+  @include xxs {
+    width: 81.25%;
+  }
+  @include tn {
+    width: 85.25%;
+  }
+}
+.nombrePlatillo {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_0;
+  color: $color_type_1;
+  text-align: center;
+  letter-spacing: 0px;
+  @include lg {
+    font-size: 56px;
+    text-align: center;
+  }
+  @include md {
+    font-size: 48px;
+  }
+  @include sm {
+    font-size: 41px;
+  }
+  @include xs {
+    font-size: 37px;
+  }
+  @include xxs {
+    font-size: 34px;
+  }
+  @include tn {
+    font-size: 31px;
+  }
+  position: relative;
+}
+.detallesPlatillo {
+  @include h-center-content;
+  font: $font_type_2;
+  color: $color_type_0;
+  text-align: center;
+  letter-spacing: 0px;
+  width: 85.64%;
+  @include lg {
+    font-size: 14px;
+    text-align: center;
+  }
+  @include md {
+    font-size: 13px;
+  }
+  @include xs {
+    font-size: 12px;
+    width: 88.83%;
+  }
+  position: relative;
+  margin: 0px auto;
+  @include xxs {
+    width: 91.38%;
+  }
+  @include tn {
+    width: 93.39%;
+  }
+}
+.botonesID {
+  display: flex;
+  width: 1228px;
+  height: 90px;
+  @include tn {
+    flex-wrap: wrap;
+    align-content: flex-start;
+    column-gap: 0px;
+    row-gap: 16px;
+  }
+  position: absolute;
+  top: 346px;
+  left: -100vw;
+  right: -100vw;
+  margin: 0px auto;
+}
+.botonesID > .item {
+  @include flex-column;
+  position: relative;
+  flex: 1 1 90px;
+  @include tn {
+    flex: 0 0 100%;
+  }
+}
+.izquierda {
+  width: 90px;
+  height: auto;
+  filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.247));
+  vertical-align: top;
+  object-fit: contain;
+  object-position: center top;
+  position: relative;
+  min-width: 90px;
+}
+.botonesID > .spacer {
+  flex: 0 1 1048px;
+  @include tn {
+    display: none;
+  }
+}
+.derecha {
+  width: 90px;
+  height: auto;
+  filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.247));
+  vertical-align: top;
+  object-fit: contain;
+  object-position: center top;
+  position: relative;
+  min-width: 90px;
+}
